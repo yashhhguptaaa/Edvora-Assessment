@@ -1,5 +1,7 @@
 import styles from "./ProductCard.module.css"
 
+import Card from "./card";
+
 const ProductCard = (props) => {
     console.log({props});
     const { title, products=[]} = props;
@@ -8,11 +10,11 @@ const ProductCard = (props) => {
         <section className={styles.container}>
         <h2 className={styles.title}>{title}</h2>
         
-        {/* <div className={styles.cardWrapper}>
-            {products.map((video, idx) => {
-            return <Card id={idx} imgUrl={video.imgUrl} />;
+        <div className={styles.cardWrapper}>
+            {products.map((product, idx) => {
+            return <Card id={idx} productDetails={product}  />;
             })}
-        </div> */}
+        </div>
         </section>
     );
 };
