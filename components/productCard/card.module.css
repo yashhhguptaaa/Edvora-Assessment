@@ -1,5 +1,6 @@
 .headComponent{
     display: flex;
+    width:17rem;
 }
 
 .imgMotionWrapper {
@@ -51,12 +52,34 @@
 } */
 
 .container {
-    width:14rem;
+    width:17rem;
     height: 10rem;
     margin-right: 2.25rem
         /* 4px */
     ;
     cursor: pointer;
+    
+        border-radius: 0.75rem
+            /* 12px */
+        ;
+        padding-top: 0.25rem
+            /* 4px */
+        ;
+        padding-bottom: 0.25rem
+            /* 4px */
+        ;
+        padding-bottom: 1.25rem
+            /* 20px */
+        ;
+        padding-left: 1rem
+            /* 16px */
+        ;
+        padding-right: 1rem
+            /* 16px */
+        ;
+    
+        backdrop-filter: blur(10px);
+    
 }
 
 .cardImg {
@@ -74,4 +97,5 @@
     display: block;
 
     width: 5rem;
+    height: 4rem;
 }
