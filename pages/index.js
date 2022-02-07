@@ -30,7 +30,7 @@ export async function getStaticProps(){
 export default function Home(props) {
 
   const [brandList, setBrandList] = useState(props.brandCategories)
-  console.log({brandList})
+  
 
   return (
     <div className={styles.container}>
@@ -44,6 +44,21 @@ export default function Home(props) {
         <div className={styles.flexboxClass}>
           {/* <CategoryCard /> */}
           {/* <ProductCard /> */}
+          {Object.keys(brandList).length > 0 && (
+            // <div className={styles.sectionWrapper}>
+            //   <h2 className={styles.heading2}>Toronto stores</h2>
+
+              <div className={styles.cardLayout}>
+                {Object.keys(brandList).map((ele, index) => (
+                  <ProductCard
+                    key={index}
+                    title={ele}
+                    products={brandList[ele]}
+                  />
+                ))}
+              </div>
+            // </div>
+          )}
         </div>
       </div>
 

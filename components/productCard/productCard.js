@@ -1,16 +1,18 @@
 import styles from "./ProductCard.module.css"
 
 const ProductCard = (props) => {
-    const { title, videos=[], size } = props;
-    console.log({ videos });
+    console.log({props});
+    const { title, products=[]} = props;
+    console.log({ products });
     return (
         <section className={styles.container}>
         <h2 className={styles.title}>{title}</h2>
-        <div className={styles.cardWrapper}>
-            {videos.map((video, idx) => {
-            return <Card id={idx} imgUrl={video.imgUrl} size={size} />;
+        
+        {/* <div className={styles.cardWrapper}>
+            {products.map((video, idx) => {
+            return <Card id={idx} imgUrl={video.imgUrl} />;
             })}
-        </div>
+        </div> */}
         </section>
     );
 };
