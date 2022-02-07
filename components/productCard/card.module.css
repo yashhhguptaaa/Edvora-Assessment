@@ -99,3 +99,8 @@
     width: 5rem;
     height: 4rem;
 }
+
+.middleComponent{
+    display: flex;
+    width:17rem;
+}
