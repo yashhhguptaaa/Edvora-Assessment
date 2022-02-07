@@ -10,10 +10,14 @@ const ProductCard = (props) => {
         <section className={styles.container}>
             <h2 className={styles.title}>{title}</h2>
             
-            <div className={styles.cardWrapper}>
-                {products.map((product, idx) => {
-                return <Card key={idx} productDetails={product}  />;
-                })}
+            <div className={styles.productCardWrapper}>
+
+                <div className={styles.cardWrapper}>
+                    {products.map((product, idx) => {
+                    return <Card key={idx} productDetails={product}  />;
+                    })}
+                </div>
+
             </div>
         </section>
     );

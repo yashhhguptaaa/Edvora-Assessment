@@ -7,6 +7,10 @@
     display: inline-block;
 }
 
+.productNameBrandCost{
+    margin-left: 2rem;
+}
+
 .productNameElement{
     color: var(--white20);
     font-size: 1rem;
@@ -14,12 +18,12 @@
 
 .productBrandElement{
     color: var(--white20);
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .costElement{
     color: var(--white20);
-    font-size: 1rem;
+    font-size: 0.87rem;
 }
 
 /* .smItem {
@@ -47,7 +51,9 @@
 } */
 
 .container {
-    margin-right: 0.25rem
+    width:14rem;
+    height: 10rem;
+    margin-right: 2.25rem
         /* 4px */
     ;
     cursor: pointer;
@@ -67,5 +73,5 @@
     object-position: center;
     display: block;
 
-    max-width: 100%;
+    width: 5rem;
 }

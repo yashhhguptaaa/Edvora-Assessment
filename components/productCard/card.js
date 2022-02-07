@@ -31,11 +31,11 @@ const Card = (props) => {
 
         <div className={styles.imgMotionWrapper} >
             <img src={props.productDetails.image} alt="" layout="fill" className={styles.cardImg} 
-            onError={handleOnError} width="200" height="100"
+            onError={handleOnError} 
             />
         </div>
 
-        <div className={styles.productNameBrand}>
+        <div className={styles.productNameBrandCost}>
             <h4 className={styles.productNameElement}>{props.productDetails.product_name}</h4>
             <h4 className={styles.productBrandElement}>{props.productDetails.brand_name}</h4>
             <p className={styles.costElement}>$ {props.productDetails.price}</p>
