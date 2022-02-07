@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -9,23 +11,27 @@ export async function getStaticProps(){
   const response = await fetch('https://assessment-edvora.herokuapp.com/')  
   const data = await response.json();
 
-  let categories = {};
+  let brandCategories = {};
   data.forEach(element => {
-    if(!categories[element.brand_name]){
-      categories[element.brand_name] = [];
+    if(!brandCategories[element.brand_name]){
+      brandCategories[element.brand_name] = [];
     }
-    categories[element.brand_name].push(element)
+    brandCategories[element.brand_name].push(element)
   });
  
 
   return {
     props: {
-      categories
+      brandCategories
     },
   };
 }
 
-export default function Home() {
+export default function Home(props) {
+
+  const [brandList, setBrandList] = useState(props.brandCategories)
+  console.log({brandList})
+
   return (
     <div className={styles.container}>
       <Head>
