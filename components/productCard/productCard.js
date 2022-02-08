@@ -9,7 +9,7 @@ const ProductCard = (props) => {
     return (
         <section className={styles.container}>
             <h2 className={styles.title}>{title}</h2>
-            <hr />
+            <hr style={{width:"66rem",marginLeft:"1.5rem"}}/>
             <div className={styles.productCardWrapper}>
 
                 <div className={styles.cardWrapper}>
