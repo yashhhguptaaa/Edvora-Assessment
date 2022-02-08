@@ -13,6 +13,7 @@
     color: var(--white20);
     font-weight: 700;
     font-size: 2rem;
+    margin-bottom: 14px;
 }
 
 .productCardWrapper{
