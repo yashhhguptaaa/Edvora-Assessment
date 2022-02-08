@@ -1,6 +1,6 @@
 .headComponent{
     display: flex;
-    width:17rem;
+    width:21rem;
 }
 
 .imgMotionWrapper {
@@ -24,6 +24,13 @@
 
 .costElement{
     color: var(--white20);
+    font-size: 0.87rem;
+}
+
+.productDate{
+    position: absolute;
+    color: var(--white20);
+    margin-left: 12rem;
     font-size: 0.87rem;
 }
 
