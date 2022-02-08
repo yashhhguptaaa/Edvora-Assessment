@@ -36,7 +36,7 @@ const Card = (props) => {
         </div>
 
         <div className={styles.productNameBrandCost}>
-            <h4 className={styles.productNameElement}>{props.productDetails.product_name}</h4>
+            <h4 className={styles.productNameElement}>{props.productDetails.product_name.substring(0,18)+".."}</h4>
             <h4 className={styles.productBrandElement}>{props.productDetails.brand_name}</h4>
             <p className={styles.costElement}>$ {props.productDetails.price}</p>
         </div>
@@ -44,12 +44,12 @@ const Card = (props) => {
       </div>
 
       <div className={styles.middleComponent}>
-        <h4 className={styles.productNameElement}>{props.productDetails.address.state}, {props.productDetails.address.city}</h4>
+        <h4 className={styles.productAddress}>{props.productDetails.address.state}, {props.productDetails.address.city}</h4>
         <h4 className={styles.productDate}>{moment(props.productDetails.date).format('hh:mm:ss')}</h4>
       </div>
 
       <div className={styles.bottomComponent}>
-        <h4 className={styles.productBrandElement}>{props.productDetails.discription}</h4>
+        <h4 className={styles.productDescription}>{props.productDetails.discription}</h4>
       </div>
 
       

@@ -9,7 +9,7 @@ const ProductCard = (props) => {
     return (
         <section className={styles.container}>
             <h2 className={styles.title}>{title}</h2>
-            
+            <hr />
             <div className={styles.productCardWrapper}>
 
                 <div className={styles.cardWrapper}>
