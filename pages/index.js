@@ -44,21 +44,32 @@ export default function Home(props) {
         <div className={styles.flexboxClass}>
           {/* <CategoryCard /> */}
           {/* <ProductCard /> */}
-          {Object.keys(brandList).length > 0 && (
-            // <div className={styles.sectionWrapper}>
-            //   <h2 className={styles.heading2}>Toronto stores</h2>
+          <div className={styles.categoryCardWrapper}>
+            CategoryCard
+          </div>
+          <div className={styles.productCardWrapper}>
+            
+            <h2 className={styles.brandTitle}>Edvora</h2>
 
-              <div className={styles.cardLayout}>
-                {Object.keys(brandList).map((ele, index) => (
-                  <ProductCard
-                    key={index}
-                    title={ele}
-                    products={brandList[ele]}
-                  />
-                ))}
-              </div>
-            // </div>
-          )}
+            <h2 className={styles.productTitle}>Products</h2>
+
+            {Object.keys(brandList).length > 0 && (
+              // <div className={styles.sectionWrapper}>
+              //   <h2 className={styles.heading2}>Toronto stores</h2>
+
+                <div className={styles.cardLayout}>
+                  {Object.keys(brandList).map((ele, index) => (
+                    <ProductCard
+                      key={index}
+                      title={ele}
+                      products={brandList[ele]}
+                    />
+                  ))}
+                </div>
+              // </div>
+            )}
+
+          </div>
         </div>
       </div>
      
