@@ -27,6 +27,19 @@
     margin-top: 0.8rem;
 }
 
+.productsTitle{
+    position: absolute;
+    margin-left: 1rem;
+    font-weight: 300;
+    font-size: 1.089rem;
+    margin-top: 6px;
+}
+
+.dropDownImage{
+    margin-left: 9rem;
+    margin-top: 0.5rem;
+}
+
 .searchOption{
     position: absolute;
     margin-top: 1rem;
@@ -35,13 +48,31 @@
 }
 
 .productsDropdown{
-
+    position: absolute;
+    margin-top: 6rem;
+    width: 11rem;
+    background-color: hsla(0, 3%, 20%, 0.7);
+    height: 2.5rem;
+    border-radius: 0.525rem;
+    margin-left: 0.89rem;
 }
 
 .stateDropdown{
-
+    position: absolute;
+    margin-top: 9rem;
+    width: 11rem;
+    background-color: hsla(0, 3%, 20%, 0.7);
+    height: 2.5rem;
+    border-radius: 0.525rem;
+    margin-left: 0.89rem;
 }
 
 .cityDropdown{
-
+    position: absolute;
+    margin-top: 12rem;
+    width: 11rem;
+    background-color: hsla(0, 3%, 20%, 0.7);
+    height: 2.5rem;
+    border-radius: 0.525rem;
+    margin-left: 0.89rem;
 }
