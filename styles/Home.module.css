@@ -10,7 +10,8 @@
   position: relative;
   margin-left: 8%;
   font-size: 2.4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.837);
 }
 
 .productTitle{
@@ -25,5 +26,5 @@
 }
 
 .productCardWrapper{
-  margin-left: 15rem;
+  margin-left: -1.4rem;
 }

@@ -1,0 +1,47 @@
+.container{
+    background-color: black;
+    padding-left: 1rem
+        /* 16px */
+    ;
+    padding-right: 1rem
+        /* 16px */
+    ;
+    border-radius: 0.9rem;
+    width: 15rem;
+    height: 17rem;
+    margin-left: 2.6rem;
+    margin-top: 1rem;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.searchTitle{
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.687);
+}
+
+.hrContainer{
+    margin-top: 0.8rem;
+}
+
+.searchOption{
+    position: absolute;
+    margin-top: 1rem;
+    width: 10.5rem;
+    margin-left: 1rem;
+}
+
+.productsDropdown{
+
+}
+
+.stateDropdown{
+
+}
+
+.cityDropdown{
+
+}

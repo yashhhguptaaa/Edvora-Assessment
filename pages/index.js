@@ -42,10 +42,10 @@ export default function Home(props) {
 
       <div className={styles.sectionWrapper}>
         <div className={styles.flexboxClass}>
-          {/* <CategoryCard /> */}
+          
           {/* <ProductCard /> */}
           <div className={styles.categoryCardWrapper}>
-            CategoryCard
+            <CategoryCard />
           </div>
           <div className={styles.productCardWrapper}>
             
