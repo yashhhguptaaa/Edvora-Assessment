@@ -31,7 +31,7 @@ const CategoryCard = () => {
                 </div>
 
                 <div className={styles.stateDropdown}>
-                    <span className={styles.productsTitle}>Products</span>
+                    <span className={styles.productsTitle}>State</span>
                     <div className={styles.dropDownImage}>
 
                         <Image
@@ -44,7 +44,7 @@ const CategoryCard = () => {
                     </div>
                 </div>
                 <div className={styles.cityDropdown}>
-                    <span className={styles.productsTitle}>Products</span>
+                    <span className={styles.productsTitle}>City</span>
                     <div className={styles.dropDownImage}>
 
                         <Image

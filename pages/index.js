@@ -53,21 +53,25 @@ export default function Home(props) {
 
             <h2 className={styles.productTitle}>Products</h2>
 
-            {Object.keys(brandList).length > 0 && (
-              // <div className={styles.sectionWrapper}>
-              //   <h2 className={styles.heading2}>Toronto stores</h2>
+            <div className={styles.listOfProductsWrapper}>
 
-                <div className={styles.cardLayout}>
-                  {Object.keys(brandList).map((ele, index) => (
-                    <ProductCard
-                      key={index}
-                      title={ele}
-                      products={brandList[ele]}
-                    />
-                  ))}
-                </div>
-              // </div>
-            )}
+              {Object.keys(brandList).length > 0 && (
+                // <div className={styles.sectionWrapper}>
+                //   <h2 className={styles.heading2}>Toronto stores</h2>
+
+                  <div className={styles.cardLayout}>
+                    {Object.keys(brandList).map((ele, index) => (
+                      <ProductCard
+                        key={index}
+                        title={ele}
+                        products={brandList[ele]}
+                      />
+                    ))}
+                  </div>
+                // </div>
+              )}
+
+            </div>
 
           </div>
         </div>

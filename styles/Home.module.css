@@ -28,3 +28,11 @@
 .productCardWrapper{
   margin-left: -1.4rem;
 }
+
+@media (max-width: 768px){
+  .listOfProductsWrapper{
+    margin-left: 3rem;
+  }
+}
+
+
