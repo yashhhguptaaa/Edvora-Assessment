@@ -15,7 +15,7 @@ const CategoryCard = ({allProducts, allCity, allState}) => {
             <div className={styles.wrapper}>
 
                 <div className={styles.searchOption}>
-                    {/* <input styles={{backgroundColor:"black"}} type="search" /> */}
+                    
                     <span className={styles.searchTitle}>Filters</span>
                     <div className={styles.hrContainer}>
                         <hr />

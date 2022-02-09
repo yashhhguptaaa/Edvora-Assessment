@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 import CategoryCard from '../components/categoryCard/categoryCard'
@@ -44,7 +43,7 @@ export default function Home(props) {
     }
   })
 
-  console.log("allProducts: ",allProducts, " allCity:",allCity," allState:",allState)
+
 
   return (
     <div className={styles.container}>
@@ -57,7 +56,7 @@ export default function Home(props) {
       <div className={styles.sectionWrapper}>
         <div className={styles.flexboxClass}>
           
-          {/* <ProductCard /> */}
+   
           <div className={styles.categoryCardWrapper}>
             <CategoryCard allProducts={allProducts} allCity={allCity} allState={allState} />
           </div>
@@ -70,8 +69,6 @@ export default function Home(props) {
             <div className={styles.listOfProductsWrapper}>
 
               {Object.keys(brandList).length > 0 && (
-                // <div className={styles.sectionWrapper}>
-                //   <h2 className={styles.heading2}>Toronto stores</h2>
 
                   <div className={styles.cardLayout}>
                     {Object.keys(brandList).map((ele, index) => (
@@ -82,7 +79,7 @@ export default function Home(props) {
                       />
                     ))}
                   </div>
-                // </div>
+            
               )}
 
             </div>
