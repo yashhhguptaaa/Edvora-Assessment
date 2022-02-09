@@ -45,9 +45,9 @@ const CategoryCard = ({allProducts, allCity, allState}) => {
                         expandProducts ?
                         (<div className={styles.dropDownWrapper}>
                             {
-                                allProducts.map(x => (
+                                allProducts.map((x,idx) => (
                                     <div>
-                                        <span className={styles.dropdownContent}>{x.substring(0,16)}</span><br/>
+                                        <span key={idx} className={styles.dropdownContent}>{x.substring(0,16)}</span><br/>
                                     </div>
                                 ) )
                             }
@@ -80,9 +80,9 @@ const CategoryCard = ({allProducts, allCity, allState}) => {
                         expandState ?
                         (<div className={styles.dropDownWrapperState}>
                             {
-                                allState.map(x => (
+                                allState.map((x,idx) => (
                                     <div>
-                                        <span className={styles.dropdownContent}>{x.substring(0,17)}</span><br/>
+                                        <span key={idx} className={styles.dropdownContent}>{x.substring(0,17)}</span><br/>
                                     </div>
                                 ) )
                             }
@@ -115,9 +115,9 @@ const CategoryCard = ({allProducts, allCity, allState}) => {
                         expandCity ?
                         (<div className={styles.dropDownWrapperCity}>
                             {
-                                allCity.filter((x,idx) => {if(idx<5) return x}).map(x => (
+                                allCity.filter((x,idx) => {if(idx<5) return x}).map((x,idx) => (
                                     <div>
-                                        <span className={styles.dropdownContent}>{x.substring(0,17)}</span><br/>
+                                        <span key={idx} className={styles.dropdownContent}>{x.substring(0,17)}</span><br/>
                                     </div>
                                 ) )
                             }
