@@ -10,7 +10,7 @@ import ProductCard from '../components/productCard/productCard'
 export async function getStaticProps(){
   const response = await fetch('https://assessment-edvora.herokuapp.com/')  
   const data = await response.json();
-
+  
   let brandCategories = {};
   data.forEach(element => {
     if(!brandCategories[element.brand_name]){
@@ -32,6 +32,20 @@ export default function Home(props) {
   const [brandList, setBrandList] = useState(props.brandCategories)
   
 
+  let allProducts= [], allState=[], allCity=[];
+  Object.keys(brandList).forEach(item => {
+    allProducts.push(brandList[item][0].product_name)
+    for(let i=0;i<brandList[item].length;i++){
+
+      if(allState.indexOf(brandList[item][i].address.state) === -1)
+        allState.push(brandList[item][i].address.state)
+      if(allCity.indexOf(brandList[item][i].address.city) === -1)
+        allCity.push(brandList[item][i].address.city)
+    }
+  })
+
+  console.log("allProducts: ",allProducts, " allCity:",allCity," allState:",allState)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -45,7 +59,7 @@ export default function Home(props) {
           
           {/* <ProductCard /> */}
           <div className={styles.categoryCardWrapper}>
-            <CategoryCard />
+            <CategoryCard allProducts={allProducts} allCity={allCity} allState={allState} />
           </div>
           <div className={styles.productCardWrapper}>
             

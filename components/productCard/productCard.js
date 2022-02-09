@@ -3,9 +3,8 @@ import styles from "./ProductCard.module.css"
 import Card from "./card";
 
 const ProductCard = (props) => {
-    // console.log({props});
+
     const { title, products=[]} = props;
-    // console.log({ products });
     return (
         <section className={styles.container}>
             <h2 className={styles.title}>{title}</h2>

@@ -47,6 +47,10 @@
     margin-left: 1rem;
 }
 
+.productsDropdownWrapper{
+
+}
+
 .productsDropdown{
     position: absolute;
     margin-top: 6rem;
@@ -56,6 +60,63 @@
     border-radius: 0.525rem;
     margin-left: 0.89rem;
 }
+
+.dropDownWrapper{
+    width: 11.4rem;
+    position: absolute;
+    margin-top: 8.5rem;
+    font-size: 1.1rem;
+    margin-left: 0.8rem;
+    background-color: black;
+    z-index: 2;
+    border-radius: 0.815rem;
+}
+
+.dropDownWrapperState{
+    width: 11.4rem;
+    position: absolute;
+    margin-top: 11.5rem;
+    font-size: 1.1rem;
+    margin-left: 0.8rem;
+    background-color: black;
+    z-index: 2;
+    border-radius: 0.815rem;
+}
+
+.dropDownWrapperCity{
+    width: 11.4rem;
+    position: absolute;
+    margin-top: 14.5rem;
+    font-size: 1.1rem;
+    margin-left: 0.8rem;
+    background-color: black;
+    z-index: 2;
+    border-radius: 0.815rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+  .dropdownContent {
+
+    position: relative;
+    color:white;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 7rem;
+    margin-left: 0.5rem;
+  }
+  
+  .dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
 
 .stateDropdown{
     position: absolute;
