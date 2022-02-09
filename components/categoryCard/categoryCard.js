@@ -46,8 +46,8 @@ const CategoryCard = ({allProducts, allCity, allState}) => {
                         (<div className={styles.dropDownWrapper}>
                             {
                                 allProducts.map((x,idx) => (
-                                    <div>
-                                        <span key={idx} className={styles.dropdownContent}>{x.substring(0,16)}</span><br/>
+                                    <div key={idx}>
+                                        <span  className={styles.dropdownContent}>{x.substring(0,16)}</span><br/>
                                     </div>
                                 ) )
                             }
@@ -81,8 +81,8 @@ const CategoryCard = ({allProducts, allCity, allState}) => {
                         (<div className={styles.dropDownWrapperState}>
                             {
                                 allState.map((x,idx) => (
-                                    <div>
-                                        <span key={idx} className={styles.dropdownContent}>{x.substring(0,17)}</span><br/>
+                                    <div key={idx}>
+                                        <span  className={styles.dropdownContent}>{x.substring(0,17)}</span><br/>
                                     </div>
                                 ) )
                             }
@@ -116,8 +116,8 @@ const CategoryCard = ({allProducts, allCity, allState}) => {
                         (<div className={styles.dropDownWrapperCity}>
                             {
                                 allCity.filter((x,idx) => {if(idx<5) return x}).map((x,idx) => (
-                                    <div>
-                                        <span key={idx} className={styles.dropdownContent}>{x.substring(0,17)}</span><br/>
+                                    <div key={idx}>
+                                        <span  className={styles.dropdownContent}>{x.substring(0,17)}</span><br/>
                                     </div>
                                 ) )
                             }
