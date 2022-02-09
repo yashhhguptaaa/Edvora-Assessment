@@ -3,4 +3,4 @@ Edvora-Products is an app where you can explore different products. The data whi
 
 This app is built for Edvora's front-end internship challenge.
 
-### App is live at [Link](https://quirky-noether-b57f0b.netlify.app/)
+### App is live at [Link](https://edvora-assessment-three.vercel.app/)
